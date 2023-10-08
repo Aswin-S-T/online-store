@@ -5,29 +5,15 @@ import Sidebar from "./Components/customers/sidebar/Sidebar";
 import Category from "./Components/customers/Category/Category";
 import Products from "./Components/customers/Products/Products";
 import Footer from "./Components/customers/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeScreen from "./Screens/customers/HomeScreen";
 function App() {
   return (
-    <div>
-      <div class="container-fluid">
-        <Header />
-      </div>
-
-      <div class="container-fluid mb-5">
-        <Sidebar />
-      </div>
-
-      <div class="container-fluid pt-5">
-        <Category />
-      </div>
-
-      <div>
-        <Products />
-      </div>
-
-      <div>
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
