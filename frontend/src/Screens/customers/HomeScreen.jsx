@@ -4,8 +4,10 @@ import Sidebar from "../../Components/customers/sidebar/Sidebar";
 import Category from "../../Components/customers/Category/Category";
 import Products from "../../Components/customers/Products/Products";
 import Footer from "../../Components/customers/Footer/Footer";
+import API_BASE_URL from "../../Constants/Constants";
 
 function HomeScreen() {
+  console.log("BASE URL--------", API_BASE_URL);
   return (
     <div>
       <div>
