@@ -7,7 +7,6 @@ import Footer from "../../Components/customers/Footer/Footer";
 import API_BASE_URL from "../../Constants/Constants";
 
 function HomeScreen() {
-  console.log("BASE URL--------", API_BASE_URL);
   return (
     <div>
       <div>
