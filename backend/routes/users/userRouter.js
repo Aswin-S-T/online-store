@@ -13,6 +13,11 @@ userRouter.get("/all-products", (req, res) => {
   let response = {};
   successResponse.data = products;
   res.send(successResponse);
+
+
 });
+
+
+
 
 module.exports = userRouter;
